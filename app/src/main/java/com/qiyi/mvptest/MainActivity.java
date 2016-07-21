@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.qiyi.mvptest.Gson.GsonMainActivity;
+import com.qiyi.mvptest.gson.GsonMainActivity;
 import com.qiyi.mvptest.aidl.AidlMainActivity;
 import com.qiyi.mvptest.dagger.DaggerMainActivity;
 import com.qiyi.mvptest.butterknife.ButterKnifeActivity;
 import com.qiyi.mvptest.eventbus.EventBusActivity;
 import com.qiyi.mvptest.handlerThread.HandlerThreadActivity;
 import com.qiyi.mvptest.messenger.ClientActivity;
+import com.qiyi.mvptest.picasso.PicassoMainActivity;
 import com.qiyi.mvptest.pulltorefresh.PullMainActivity;
 import com.qiyi.mvptest.retrofit.RetrofitTestActivity;
 import com.qiyi.mvptest.rxjava.RxJavaMainActivity;
@@ -83,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickGson(View view) {
         Intent intent = new Intent(this, GsonMainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickPicasso(View view) {
+        Intent intent = new Intent(this, PicassoMainActivity.class);
         startActivity(intent);
     }
 }

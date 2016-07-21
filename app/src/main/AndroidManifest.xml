@@ -53,8 +53,10 @@
         <activity android:name=".aidl.AidlMainActivity" />
         <activity android:name=".pulltorefresh.PullMainActivity" />
         <activity android:name=".volley.VolleyMainActivity" />
-        <activity android:name=".Gson.GsonMainActivity" />
-        <activity android:name=".RecycleView.RecyclerViewActivity"></activity>
+        <activity android:name=".gson.GsonMainActivity" />
+        <activity android:name=".RecycleView.RecyclerViewActivity"/>
+        <activity android:name=".picasso.PicassoMainActivity"/>
+        <activity android:name=".picasso.ListViewActivity"/>
     </application>
 
 </manifest>

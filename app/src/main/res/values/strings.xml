@@ -85,6 +85,13 @@
     <string name="json_to_obj_list">json转obj集合</string>
     <string name="gson">Gson</string>
 
+    <string name="listview_show_pic">ListView显示图片</string>
+    <string name="show_image_with_size">下图是根据ImageView大小，显示图片</string>
+    <string name="show_image_with_code">下图是通过程序代码，来显示图片大小</string>
+    <string name="show_native_image">加载本地的图片</string>
+    <string name="crop_image">截取图片</string>
+    <string name="picasso">Picasso</string>
+
     <string-array name="prov_array">
         <item>湖北省</item>
         <item>湖南省</item>
