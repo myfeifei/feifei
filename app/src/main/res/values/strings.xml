@@ -91,6 +91,10 @@
     <string name="show_native_image">加载本地的图片</string>
     <string name="crop_image">截取图片</string>
     <string name="picasso">Picasso</string>
+    <string name="base">base</string>
+    <string name="hierarchy">hierarchy</string>
+    <string name="for_round">for round</string>
+    <string name="fresco">fresco</string>
 
     <string-array name="prov_array">
         <item>湖北省</item>

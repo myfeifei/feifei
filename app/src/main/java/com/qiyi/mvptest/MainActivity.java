@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.qiyi.mvptest.fresco.FrescoMainActivity;
 import com.qiyi.mvptest.gson.GsonMainActivity;
 import com.qiyi.mvptest.aidl.AidlMainActivity;
 import com.qiyi.mvptest.dagger.DaggerMainActivity;
@@ -89,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickPicasso(View view) {
         Intent intent = new Intent(this, PicassoMainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickFresco(View view) {
+        Intent intent = new Intent(this, FrescoMainActivity.class);
         startActivity(intent);
     }
 }

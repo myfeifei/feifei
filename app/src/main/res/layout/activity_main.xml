@@ -85,4 +85,10 @@
         android:layout_height="wrap_content"
         android:text="@string/picasso"
         android:onClick="onClickPicasso"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fresco"
+        android:onClick="onClickFresco"/>
 </LinearLayout>

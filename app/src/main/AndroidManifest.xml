@@ -54,9 +54,13 @@
         <activity android:name=".pulltorefresh.PullMainActivity" />
         <activity android:name=".volley.VolleyMainActivity" />
         <activity android:name=".gson.GsonMainActivity" />
-        <activity android:name=".RecycleView.RecyclerViewActivity"/>
-        <activity android:name=".picasso.PicassoMainActivity"/>
-        <activity android:name=".picasso.ListViewActivity"/>
+        <activity android:name=".RecycleView.RecyclerViewActivity" />
+        <activity android:name=".picasso.PicassoMainActivity" />
+        <activity android:name=".picasso.ListViewActivity" />
+        <activity android:name=".fresco.FrescoMainActivity" />
+        <activity android:name=".fresco.FrescoBaseActivity" />
+        <activity android:name=".fresco.FrescoHierarchyActivity" />
+        <activity android:name=".fresco.FrescoForRoundActivity"></activity>
     </application>
 
 </manifest>
