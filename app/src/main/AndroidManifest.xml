@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiyi.mvptest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".messenger.ClientActivity"
+            android:label="@string/title_activity_client"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".handlerThread.HandlerThreadActivity"
+            android:label="@string/title_activity_client"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".messenger.MessengerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":messenger">
+            <intent-filter>
+                <action android:name="com.qiyi.mvptest.messenger" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".suspension.SuspendActivity" />
+        <activity android:name=".eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.SecondActivity" />
+        <activity android:name=".retrofit.RetrofitTestActivity" />
+        <activity android:name=".butterknife.ButterKnifeActivity" />
+        <activity android:name=".dagger.ReposListActivity" />
+        <activity android:name=".dagger.DaggerMainActivity" />
+        <activity android:name=".rxjava.RxJavaMainActivity" />
+        <activity android:name=".aidl.AidlMainActivity" />
+        <activity android:name=".pulltorefresh.PullMainActivity" />
+        <activity android:name=".volley.VolleyMainActivity" />
+        <activity android:name=".Gson.GsonMainActivity" />
+        <activity android:name=".RecycleView.RecyclerViewActivity"></activity>
+    </application>
+
+</manifest>
