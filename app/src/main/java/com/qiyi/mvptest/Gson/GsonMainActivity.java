@@ -1,4 +1,4 @@
-package com.qiyi.mvptest.Gson;
+package com.qiyi.mvptest.gson;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

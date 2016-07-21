@@ -1,4 +1,4 @@
-package com.qiyi.mvptest.Gson;
+package com.qiyi.mvptest.gson;
 
 /**
  * Created by kezhan_sx on 2016/7/11.
