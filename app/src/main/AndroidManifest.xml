@@ -60,7 +60,10 @@
         <activity android:name=".fresco.FrescoMainActivity" />
         <activity android:name=".fresco.FrescoBaseActivity" />
         <activity android:name=".fresco.FrescoHierarchyActivity" />
-        <activity android:name=".fresco.FrescoForRoundActivity"></activity>
+        <activity android:name=".fresco.FrescoForRoundActivity" />
+        <activity android:name=".okhttp.OkhttpGetActivity" />
+        <activity android:name=".okhttp.OkhttpPostActivity" />
+        <activity android:name=".okhttp.OkhttpFileActivity"></activity>
     </application>
 
 </manifest>
