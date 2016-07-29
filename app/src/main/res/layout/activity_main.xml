@@ -91,4 +91,10 @@
         android:layout_height="wrap_content"
         android:text="@string/fresco"
         android:onClick="onClickFresco"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/binder_pool"
+        android:onClick="onClickBinderPool"/>
 </LinearLayout>
