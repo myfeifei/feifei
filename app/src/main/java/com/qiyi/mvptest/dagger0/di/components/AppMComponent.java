@@ -18,7 +18,6 @@ import javax.inject.Singleton;
 public interface AppMComponent {
 
     Context getContext();
-
     Navigator getNavigator();
     ToastUtil getToastUtil();
 //    Test test();

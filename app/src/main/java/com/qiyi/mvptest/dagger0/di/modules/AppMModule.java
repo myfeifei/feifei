@@ -5,6 +5,7 @@ import android.content.Context;
 import com.qiyi.mvptest.dagger0.Navigator;
 import com.qiyi.mvptest.dagger0.ToastUtil;
 
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;

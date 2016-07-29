@@ -61,6 +61,7 @@ public class VolleyMainActivity extends AppCompatActivity {
                 textView.setText(volleyError.getMessage());
             }
         });
+        getStringRequest.setTag("abcGet");
         requestQueue.add(getStringRequest);
     }
 
@@ -207,4 +208,9 @@ public class VolleyMainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        requestQueue.cancelAll("abcGet");
+    }
 }

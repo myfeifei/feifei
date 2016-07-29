@@ -4,6 +4,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.qiyi.mvptest.R;
+import com.qiyi.mvptest.dagger0.di.components.DaggerMainComponent;
 import com.qiyi.mvptest.dagger0.di.components.MainComponent;
 import com.qiyi.mvptest.dagger0.di.modules.ActivityModule;
 import com.qiyi.mvptest.dagger0.di.modules.MainModule;
@@ -17,10 +18,11 @@ public class Dagger0MainActivity extends BaseActivity implements MainFragment.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mMainComponent = DaggerMainComponent.builder().appComponent(getAppComponent())
-//                .mainModule(new MainModule())
-//                .activityModule(new ActivityModule(this)).build();
-//        mMainComponent.inject(this);
+        mMainComponent = DaggerMainComponent.builder()
+                .appMComponent(getAppComponent())
+                .mainModule(new MainModule())
+                .activityModule(new ActivityModule(this)).build();
+        mMainComponent.inject(this);
     }
 
     public MainComponent getMainComponent(){

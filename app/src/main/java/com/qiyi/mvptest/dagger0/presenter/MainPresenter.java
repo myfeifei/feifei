@@ -13,8 +13,6 @@ public class MainPresenter {
     public GetUserData mUserData;
     private IUserView mUserView;
 
-
-
     @Inject
     public MainPresenter(GetUserData userData){
         this.mUserData = userData;

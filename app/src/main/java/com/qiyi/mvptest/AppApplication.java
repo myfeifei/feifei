@@ -38,7 +38,7 @@ public class AppApplication extends MultiDexApplication {
                 .appModule(new AppModule(this))
                 .build();
         mAppComponent = DaggerAppMComponent.builder()
-                .appModule(new AppMModule(this))
+                .appMModule(new AppMModule(this))
                 .build();
     }
 

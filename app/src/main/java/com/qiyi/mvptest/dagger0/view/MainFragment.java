@@ -15,6 +15,7 @@ import com.qiyi.mvptest.dagger0.di.components.MainFragmentComponent;
 import com.qiyi.mvptest.dagger0.presenter.MainPresenter;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public class MainFragment extends BaseFragment implements MainPresenter.IUserView{
     // TODO: Rename parameter arguments, choose names that match
@@ -23,7 +24,6 @@ public class MainFragment extends BaseFragment implements MainPresenter.IUserVie
     MainPresenter mainPresenter;
     @Inject
     ToastUtil toastUtil;
-
     @Inject
     MultiConstruct multiConstruct;
 
