@@ -32,8 +32,7 @@
 
         <service
             android:name=".aidl.BookManagerService"
-            android:process=":bookmanager"/>
-
+            android:process=":bookmanager" />
         <service
             android:name=".messenger.MessengerService"
             android:enabled="true"
@@ -67,7 +66,14 @@
         <activity android:name=".fresco.FrescoForRoundActivity" />
         <activity android:name=".okhttp.OkhttpGetActivity" />
         <activity android:name=".okhttp.OkhttpPostActivity" />
-        <activity android:name=".okhttp.OkhttpFileActivity"></activity>
+        <activity android:name=".okhttp.OkhttpFileActivity" />
+
+        <service
+            android:name=".bindPool.BindPoolService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".bindPool.BinderPoolActivity"></activity>
     </application>
 
 </manifest>

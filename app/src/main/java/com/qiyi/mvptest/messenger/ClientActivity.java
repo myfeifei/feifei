@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.qiyi.mvptest.R;
+import com.qiyi.mvptest.aidl.Book;
 
 public class ClientActivity extends AppCompatActivity {
 
@@ -35,7 +36,8 @@ public class ClientActivity extends AppCompatActivity {
             switch (msgFromSever.what) {
                 case MSG_NUM:
                     TextView tv = (TextView) mLyContainer.findViewById(msgFromSever.arg1);
-                    tv.setText(tv.getText() + "" + msgFromSever.arg2);
+                    Book book = msgFromSever.getData().getParcelable("book");
+                    tv.setText(tv.getText() + "" + msgFromSever.arg2 + book.bookName);
             }
             super.handleMessage(msgFromSever);
         }
@@ -80,6 +82,7 @@ public class ClientActivity extends AppCompatActivity {
                 tv.setText(a + " + " + b + " = ");
                 tv.setId(a);
                 mLyContainer.addView(tv);
+
 
                 Message msgFromClient = Message.obtain(null, MSG_NUM, a, b);
                 msgFromClient.replyTo = mMessenger;

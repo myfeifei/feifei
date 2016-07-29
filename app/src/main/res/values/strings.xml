@@ -95,6 +95,7 @@
     <string name="hierarchy">hierarchy</string>
     <string name="for_round">for round</string>
     <string name="fresco">fresco</string>
+    <string name="compute">compute</string>
 
     <string-array name="prov_array">
         <item>湖北省</item>
